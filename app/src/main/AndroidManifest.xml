@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.potato.privatisistema">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <uses-feature
+        android:name="android.hardware.camera"
+        android:required="true" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        android:screenOrientation="portrait">
+        <activity android:name=".Prisijungimas"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".Pagrindinis" android:screenOrientation="portrait" />
+        <activity android:name=".Registracija" android:screenOrientation="portrait" />
+        <activity android:name=".SkelbimuPaieska" android:screenOrientation="portrait" />
+        <activity android:name=".LoadingScreen" android:screenOrientation="portrait" />
+        <activity android:name=".SkelbimuSarasas" android:screenOrientation="portrait" />
+        <activity android:name=".Patalpos" android:screenOrientation="portrait" />
+        <activity android:name=".PasirinktiLaika" android:screenOrientation="portrait" />
+        <activity android:name=".ObjektPerz" android:screenOrientation="portrait" />
+        <activity android:name=".VartotojoInfo" android:screenOrientation="portrait" />
+        <activity android:name=".RedaguotiSkelbima" android:screenOrientation="portrait" />
+        <activity android:name=".SkaitliukuDuom" android:screenOrientation="portrait" />
+        <activity android:name=".Nuotraukos" android:screenOrientation="portrait" />
+        <activity android:name=".UploadPhoto" android:screenOrientation="portrait" />
+        <activity android:name=".PadidintiNuotrauka" android:screenOrientation="portrait" />
+
+        <provider
+            android:name="android.support.v4.content.FileProvider"
+            android:authorities="com.example.android.fileprovider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/file_paths" />
+        </provider>
+
+        <activity android:name=".FailuList" android:screenOrientation="portrait" />
+        <activity android:name=".ManoPaskyra" android:screenOrientation="portrait" />
+        <activity android:name=".ChangePass" android:screenOrientation="portrait" />
+        <activity android:name=".TvarkytiGrafika" android:screenOrientation="portrait" />
+        <activity android:name=".Atsiliepimas" android:screenOrientation="portrait" />
+        <activity android:name=".AtsiliepimaiList" android:screenOrientation="portrait" />
+        <activity android:name=".NuotraukosDaug" android:screenOrientation="portrait"></activity>
+    </application>
+
+</manifest>

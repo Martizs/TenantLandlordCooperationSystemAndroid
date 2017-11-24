@@ -1,0 +1,663 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.potato.privatisistema.Patalpos">
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <android.support.constraint.ConstraintLayout
+            android:id="@+id/virsus"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintTop_toTopOf="parent"
+            android:layout_marginTop="8dp">
+
+            <Button
+                android:id="@+id/butPerzNuomot"
+                android:onClick="perzVart"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/per_i_r_ti_nuomotoj"
+                app:layout_constraintTop_toBottomOf="@+id/labelRezLaik"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent" />
+
+            <Button
+                android:id="@+id/butSkelbAtsNuomin"
+                android:onClick="atsiliepimasSkelb"
+                android:visibility="gone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/palikti_atsiliepim_ir_vertinti_patalpas"
+                app:layout_constraintTop_toBottomOf="@+id/butSas"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent" />
+
+            <TextView
+                android:id="@+id/labelRezLaik"
+                android:visibility="gone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:textSize="20sp"
+                android:textColor="#F00"
+                android:text="@string/rezervacijos_laikas"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/labelSav"
+                android:visibility="gone"
+                android:layout_marginTop="8dp"
+                android:layout_marginStart="8dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:text="@string/savait"
+                app:layout_constraintTop_toBottomOf="@+id/labelStatusas"
+                app:layout_constraintLeft_toLeftOf="parent" />
+
+            <TextView
+                android:id="@+id/labelDien"
+                android:visibility="gone"
+                android:layout_marginTop="8dp"
+                android:layout_marginStart="8dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:text="@string/diena"
+                app:layout_constraintTop_toBottomOf="@+id/labelSav"
+                app:layout_constraintLeft_toLeftOf="parent" />
+
+            <TextView
+                android:id="@+id/labelLaik"
+                android:visibility="gone"
+                android:layout_marginTop="8dp"
+                android:layout_marginStart="8dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:text="@string/laikas"
+                app:layout_constraintTop_toBottomOf="@+id/labelDien"
+                app:layout_constraintLeft_toLeftOf="parent" />
+
+            <TextView
+                android:id="@+id/textSavNr"
+                android:visibility="gone"
+                android:layout_marginTop="8dp"
+                android:layout_marginStart="8dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="26"
+                app:layout_constraintTop_toBottomOf="@+id/textStatusas"
+                app:layout_constraintLeft_toRightOf="@+id/labelSav" />
+
+            <TextView
+                android:id="@+id/textDien"
+                android:visibility="gone"
+                android:layout_marginTop="8dp"
+                android:layout_marginStart="8dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="pirmadienis"
+                app:layout_constraintTop_toBottomOf="@+id/textSavNr"
+                app:layout_constraintLeft_toRightOf="@+id/labelDien" />
+
+            <TextView
+                android:id="@+id/textLaik"
+                android:visibility="gone"
+                android:layout_marginTop="8dp"
+                android:layout_marginStart="8dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="16:00-17:00"
+                app:layout_constraintTop_toBottomOf="@+id/textDien"
+                app:layout_constraintLeft_toRightOf="@+id/labelLaik" />
+
+            <Button
+                android:id="@+id/butPatv"
+                android:onClick="patv"
+                android:visibility="gone"
+                android:layout_width="wrap_content"
+                android:layout_height="35dp"
+                android:text="@string/patvirtinti"
+                app:layout_constraintTop_toBottomOf="@+id/butPerzNuomin"
+                app:layout_constraintRight_toRightOf="parent" />
+
+            <Button
+                android:id="@+id/butAtm"
+                android:onClick="atm"
+                android:visibility="gone"
+                android:layout_width="wrap_content"
+                android:layout_height="35dp"
+                android:text="@string/atmesti"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/butPatv" />
+
+            <Button
+                android:id="@+id/butAts"
+                android:onClick="ats"
+                android:visibility="gone"
+                android:layout_width="wrap_content"
+                android:layout_height="35dp"
+                android:text="@string/at_aukti"
+                app:layout_constraintTop_toBottomOf="@+id/butPerzNuomot"
+                app:layout_constraintRight_toRightOf="parent" />
+
+            <Button
+                android:id="@+id/butPerzNuomin"
+                android:onClick="perzVart"
+                android:visibility="gone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/per_i_r_ti_nuominink"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/labelRezLaik" />
+
+            <TextView
+                android:id="@+id/labelStatusas"
+                android:visibility="gone"
+                android:textStyle="bold"
+                android:layout_marginTop="50dp"
+                android:layout_marginStart="8dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/statusas"
+                app:layout_constraintTop_toBottomOf="@+id/labelRezLaik"
+                app:layout_constraintLeft_toLeftOf="parent" />
+
+            <TextView
+                android:id="@+id/textStatusas"
+                android:visibility="gone"
+                android:layout_marginTop="50dp"
+                android:layout_marginStart="8dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="rezervuojama"
+                app:layout_constraintTop_toBottomOf="@+id/labelRezLaik"
+                app:layout_constraintLeft_toRightOf="@+id/labelStatusas" />
+
+            <TextView
+                android:id="@+id/labelKoment"
+                android:visibility="gone"
+                android:textStyle="bold"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/komentaras"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintLeft_toRightOf="@+id/textStatusas"
+                app:layout_constraintBottom_toTopOf="@+id/textRezKoment" />
+
+            <TextView
+                android:id="@+id/textRezKoment"
+                android:visibility="gone"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:text="You are a bad person"
+                app:layout_constraintBottom_toTopOf="@+id/butSupra"
+                app:layout_constraintRight_toRightOf="parent" />
+
+            <Button
+                android:id="@+id/butSupra"
+                android:onClick="supra"
+                android:visibility="gone"
+                android:layout_width="wrap_content"
+                android:layout_height="35dp"
+                android:text="@string/supratau"
+                app:layout_constraintTop_toBottomOf="@+id/textLaik"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent" />
+
+            <Button
+                android:id="@+id/butIsnuomoti"
+                android:onClick="isnuomoti"
+                android:visibility="gone"
+                android:layout_width="wrap_content"
+                android:layout_height="35dp"
+                android:text="@string/i_nuomoti"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textLaik"
+                app:layout_constraintBottom_toBottomOf="parent" />
+
+            <Button
+                android:id="@+id/butDok"
+                android:layout_marginTop="50dp"
+                android:visibility="gone"
+                android:onClick="getDok"
+                android:layout_width="wrap_content"
+                android:layout_height="35dp"
+                android:text="@string/objekto_dokumentai"
+                app:layout_constraintTop_toBottomOf="parent"
+                app:layout_constraintLeft_toLeftOf="parent" />
+
+            <Button
+                android:id="@+id/butNuot"
+                android:layout_marginTop="50dp"
+                android:onClick="nuotraukosPries"
+                android:visibility="gone"
+                android:layout_width="wrap_content"
+                android:layout_height="35dp"
+                android:text="@string/objekto_nuotraukos"
+                app:layout_constraintTop_toBottomOf="parent"
+                app:layout_constraintRight_toRightOf="parent" />
+
+            <Button
+                android:id="@+id/butSkaitl"
+                android:onClick="skaitliukai"
+                android:visibility="gone"
+                android:layout_width="wrap_content"
+                android:layout_height="35dp"
+                android:text="@string/skaitliuk_duomenis"
+                app:layout_constraintTop_toBottomOf="@+id/butDok"
+                app:layout_constraintLeft_toLeftOf="parent" />
+
+            <Button
+                android:id="@+id/butAtvyk"
+                android:onClick="atvykimas"
+                android:visibility="gone"
+                android:layout_width="wrap_content"
+                android:layout_height="35dp"
+                android:text="@string/prane_ti_apie_atvykim"
+                app:layout_constraintTop_toBottomOf="@+id/butSkaitl"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"/>
+
+            <Button
+                android:id="@+id/butNutr"
+                android:onClick="nutraukimas"
+                android:visibility="gone"
+                android:layout_width="wrap_content"
+                android:layout_height="35dp"
+                android:text="@string/nutraukti_nuoma"
+                app:layout_constraintTop_toBottomOf="@+id/butAtvyk"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"/>
+
+            <Button
+                android:id="@+id/butSas"
+                android:onClick="saskaitos"
+                android:visibility="gone"
+                android:layout_width="wrap_content"
+                android:layout_height="35dp"
+                android:text="@string/s_skaitos"
+                app:layout_constraintTop_toBottomOf="@+id/butNuot"
+                app:layout_constraintRight_toRightOf="parent" />
+
+            <TextView
+                android:id="@+id/labelApsilank"
+                android:visibility="gone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:text="@string/artimiausias_nuomotojo_apsilankymas"
+                app:layout_constraintTop_toBottomOf="@+id/butSas"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintLeft_toLeftOf="parent"/>
+
+            <TextView
+                android:id="@+id/textApsilank"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:visibility="gone"
+                android:hint="nėra"
+                app:layout_constraintTop_toBottomOf="@+id/labelApsilank"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintLeft_toLeftOf="parent"/>
+
+        </android.support.constraint.ConstraintLayout>
+
+        <TextView
+            android:id="@+id/textView7"
+            android:textStyle="bold"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/saviv"
+            android:layout_marginLeft="8dp"
+            app:layout_constraintLeft_toLeftOf="@+id/textSavivald"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            app:layout_constraintTop_toBottomOf="@+id/textPatTip" />
+
+        <TextView
+            android:id="@+id/textSavivald"
+            android:layout_width="175dp"
+            android:layout_height="40dp"
+            android:ems="10"
+            android:layout_marginLeft="8dp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toLeftOf="@+id/textGyven"
+            android:layout_marginRight="8dp"
+            android:layout_marginTop="8dp"
+            app:layout_constraintTop_toBottomOf="@+id/textView7"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="8dp" />
+
+        <TextView
+            android:id="@+id/textView8"
+            android:textStyle="bold"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/gyven"
+            android:layout_marginLeft="8dp"
+            app:layout_constraintLeft_toLeftOf="@+id/textGyven"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            app:layout_constraintTop_toBottomOf="@+id/textPatTip" />
+
+        <TextView
+            android:id="@+id/textGyven"
+            android:layout_width="175dp"
+            android:layout_height="40dp"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:layout_marginRight="8dp"
+            app:layout_constraintRight_toRightOf="parent"
+            android:layout_marginTop="8dp"
+            app:layout_constraintTop_toBottomOf="@+id/textView8"
+            android:layout_marginEnd="8dp" />
+
+        <TextView
+            android:id="@+id/textView9"
+            android:textStyle="bold"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/mikRaj"
+            android:layout_marginTop="8dp"
+            app:layout_constraintTop_toBottomOf="@+id/textSavivald"
+            android:layout_marginLeft="8dp"
+            app:layout_constraintLeft_toLeftOf="@+id/textMikRaj"
+            android:layout_marginStart="8dp" />
+
+        <TextView
+            android:id="@+id/textMikRaj"
+            android:layout_width="175dp"
+            android:layout_height="40dp"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:layout_marginTop="8dp"
+            app:layout_constraintTop_toBottomOf="@+id/textView9"
+            android:layout_marginLeft="8dp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toLeftOf="@+id/textGatve"
+            android:layout_marginRight="8dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="8dp" />
+
+        <TextView
+            android:id="@+id/textView10"
+            android:textStyle="bold"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/gatve"
+            android:layout_marginTop="8dp"
+            app:layout_constraintTop_toBottomOf="@+id/textGyven"
+            android:layout_marginLeft="8dp"
+            app:layout_constraintLeft_toLeftOf="@+id/textGatve"
+            android:layout_marginStart="8dp" />
+
+        <TextView
+            android:id="@+id/textGatve"
+            android:layout_width="175dp"
+            android:layout_height="40dp"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:layout_marginTop="8dp"
+            app:layout_constraintTop_toBottomOf="@+id/textView10"
+            android:layout_marginRight="8dp"
+            app:layout_constraintRight_toRightOf="parent"
+            android:layout_marginEnd="8dp" />
+
+        <TextView
+            android:id="@+id/textView11"
+            android:textStyle="bold"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/plot"
+            android:layout_marginTop="8dp"
+            app:layout_constraintTop_toBottomOf="@+id/textMikRaj"
+            android:layout_marginStart="8dp"
+            android:layout_marginLeft="8dp"
+            app:layout_constraintLeft_toLeftOf="@+id/textPlotas" />
+
+        <TextView
+            android:id="@+id/textPlotas"
+            android:layout_width="175dp"
+            android:layout_height="40dp"
+            android:ems="10"
+            android:inputType="numberDecimal"
+            android:layout_marginLeft="13dp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toLeftOf="@+id/textKaina"
+            android:layout_marginRight="8dp"
+            android:layout_marginStart="13dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginTop="7dp"
+            app:layout_constraintTop_toBottomOf="@+id/textView11"
+            app:layout_constraintHorizontal_bias="0.0" />
+
+        <TextView
+            android:id="@+id/textKaina"
+            android:layout_width="175dp"
+            android:layout_height="40dp"
+            android:ems="10"
+            android:inputType="numberDecimal"
+            android:layout_marginRight="8dp"
+            app:layout_constraintRight_toRightOf="parent"
+            android:layout_marginEnd="8dp"
+            android:layout_marginTop="8dp"
+            app:layout_constraintTop_toBottomOf="@+id/textView14" />
+
+        <TextView
+            android:id="@+id/textView14"
+            android:textStyle="bold"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/kaina"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            app:layout_constraintTop_toBottomOf="@+id/textGatve"
+            android:layout_marginLeft="8dp"
+            app:layout_constraintLeft_toLeftOf="@+id/textKaina" />
+
+        <android.support.constraint.ConstraintLayout
+            android:id="@+id/insertHere"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toLeftOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textKomentaras"
+            android:paddingBottom="40dp">
+
+        </android.support.constraint.ConstraintLayout>
+
+        <Button
+            android:id="@+id/butRezervuoti"
+            android:onClick="rezervuoti"
+            android:layout_width="wrap_content"
+            android:layout_height="48dp"
+            android:text="@string/rezervuoti"
+            app:layout_constraintTop_toBottomOf="@+id/insertHere"
+            android:layout_marginTop="32dp"
+            android:layout_marginRight="8dp"
+            app:layout_constraintRight_toRightOf="parent"
+            android:layout_marginLeft="8dp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintBottom_toTopOf="@+id/butAtsiliepimai"
+            android:layout_marginBottom="8dp"
+            app:layout_constraintHorizontal_bias="0.502"
+            app:layout_constraintVertical_bias="0.0"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="8dp" />
+
+        <Button
+            android:id="@+id/butPerzNuot"
+            android:onClick="perzNuot"
+            android:layout_width="wrap_content"
+            android:layout_height="48dp"
+            android:text="@string/per_i_r_ti_nuotraukas"
+            app:layout_constraintTop_toBottomOf="@+id/butRezervuoti"
+            android:layout_marginTop="8dp"
+            android:layout_marginRight="8dp"
+            app:layout_constraintRight_toRightOf="parent"
+            android:layout_marginLeft="8dp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintBottom_toTopOf="@+id/butAtsiliepimai"
+            android:layout_marginBottom="8dp"
+            app:layout_constraintHorizontal_bias="0.502"
+            app:layout_constraintVertical_bias="0.0"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="8dp" />
+
+        <Button
+            android:id="@+id/butAtsiliepimai"
+            android:onClick="getSkelbAts"
+            android:layout_width="wrap_content"
+            android:layout_height="48dp"
+            android:text="@string/atsiliepimai_apie_patalpas"
+            app:layout_constraintTop_toBottomOf="@+id/butPerzNuot"
+            android:layout_marginTop="8dp"
+            android:layout_marginRight="8dp"
+            app:layout_constraintRight_toRightOf="parent"
+            android:layout_marginLeft="8dp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            android:layout_marginBottom="8dp"
+            app:layout_constraintHorizontal_bias="0.502"
+            app:layout_constraintVertical_bias="0.0"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="8dp" />
+
+        <Button
+            android:id="@+id/butRedaguoti"
+            android:onClick="redSkelb"
+            android:visibility="gone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/redaguoti_skelbima"
+            app:layout_constraintTop_toBottomOf="@+id/insertHere"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <TextView
+            android:id="@+id/textView17"
+            android:textStyle="bold"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/ivert"
+            android:layout_marginTop="9dp"
+            app:layout_constraintTop_toBottomOf="@+id/textPlotas"
+            android:layout_marginLeft="8dp"
+            app:layout_constraintLeft_toLeftOf="@+id/ratingBar"
+            android:layout_marginStart="8dp" />
+
+        <RatingBar
+            android:id="@+id/ratingBar"
+            android:isIndicator="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="7dp"
+            app:layout_constraintTop_toBottomOf="@+id/textView17"
+            android:layout_marginLeft="8dp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            android:layout_marginRight="8dp"
+            app:layout_constraintRight_toRightOf="parent"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="8dp" />
+
+        <TextView
+            android:id="@+id/textView32"
+            android:textStyle="bold"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/koment"
+            android:layout_marginTop="8dp"
+            app:layout_constraintTop_toBottomOf="@+id/ratingBar"
+            app:layout_constraintLeft_toLeftOf="@+id/textKomentaras" />
+
+        <TextView
+            android:id="@+id/textKomentaras"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:hint="nėra"
+            app:layout_constraintTop_toBottomOf="@+id/textView32"
+            android:layout_marginLeft="8dp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            android:layout_marginRight="8dp"
+            app:layout_constraintRight_toRightOf="parent"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="8dp" />
+
+        <TextView
+            android:id="@+id/textView46"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:textSize="20sp"
+            android:text="@string/patalp_duomenys"
+            android:layout_marginLeft="8dp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            android:layout_marginRight="8dp"
+            app:layout_constraintRight_toRightOf="parent"
+            android:layout_marginTop="8dp"
+            app:layout_constraintTop_toBottomOf="@+id/virsus"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="8dp" />
+
+        <Button
+            android:id="@+id/butIstrint"
+            android:onClick="istrintSkelb"
+            android:visibility="gone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@+id/insertHere"
+            android:text="@string/i_trinti"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toRightOf="@+id/butRedaguoti"
+            app:layout_constraintVertical_bias="1.0" />
+
+        <Button
+            android:id="@+id/butIstrintIst"
+            android:onClick="istrintIstorija"
+            android:visibility="gone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@+id/insertHere"
+            android:text="@string/i_trinti_istorijos_ra"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toRightOf="parent" />
+
+        <TextView
+            android:id="@+id/textPatTip"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:textSize="20sp"
+            android:text="Butas"
+            android:layout_marginTop="21dp"
+            app:layout_constraintTop_toBottomOf="@+id/textView46"
+            android:layout_marginRight="8dp"
+            app:layout_constraintRight_toRightOf="parent"
+            android:layout_marginLeft="8dp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="8dp" />
+    </android.support.constraint.ConstraintLayout>
+
+</ScrollView>

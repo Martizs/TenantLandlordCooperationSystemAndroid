@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.potato.privatisistema.Pagrindinis">
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="210dp"
+        android:layout_height="35dp"
+        android:gravity="center"
+        android:textSize="20sp"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="8dp"
+        android:layout_marginRight="8dp"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginLeft="8dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        tools:layout_editor_absoluteX="23dp" />
+
+    <Button
+        android:id="@+id/butSkelbIesk"
+        android:onClick="paieska"
+        android:layout_width="350dp"
+        android:layout_height="50dp"
+        android:text="@string/skelbIesk"
+        android:layout_marginLeft="8dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginRight="8dp"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginTop="52dp"
+        app:layout_constraintTop_toBottomOf="@+id/textView3" />
+
+    <Button
+        android:id="@+id/butObjPerz"
+        android:onClick="objektPerz"
+        android:layout_width="350dp"
+        android:layout_height="50dp"
+        android:text="@string/objektPerz"
+        android:layout_marginLeft="8dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginRight="8dp"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginTop="8dp"
+        app:layout_constraintTop_toBottomOf="@+id/butNaujSkelb" />
+
+    <Button
+        android:id="@+id/butPopSkelb"
+        android:onClick="pop"
+        android:layout_width="350dp"
+        android:layout_height="50dp"
+        android:text="@string/popSkelb"
+        android:layout_marginRight="8dp"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginLeft="8dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginTop="11dp"
+        app:layout_constraintTop_toBottomOf="@+id/butSkelbIesk" />
+
+    <Button
+        android:id="@+id/butNaujSkelb"
+        android:onClick="nauj"
+        android:layout_width="350dp"
+        android:layout_height="50dp"
+        android:text="@string/naujSkelb"
+        android:layout_marginRight="8dp"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginLeft="8dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginTop="8dp"
+        app:layout_constraintTop_toBottomOf="@+id/butPopSkelb" />
+
+    <Button
+        android:id="@+id/butIdetSkelb"
+        android:onClick="naujasSkelb"
+        android:layout_width="350dp"
+        android:layout_height="50dp"
+        android:text="@string/idetSkelb"
+        android:layout_marginLeft="8dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginRight="8dp"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginTop="8dp"
+        app:layout_constraintTop_toBottomOf="@+id/butObjPerz" />
+
+    <Button
+        android:id="@+id/butPask"
+        android:onClick="paskyra"
+        android:layout_width="350dp"
+        android:layout_height="50dp"
+        android:text="@string/manPask"
+        android:layout_marginLeft="8dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginRight="8dp"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginTop="8dp"
+        app:layout_constraintTop_toBottomOf="@+id/butIdetSkelb" />
+
+</android.support.constraint.ConstraintLayout>

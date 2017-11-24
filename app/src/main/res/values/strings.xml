@@ -1,0 +1,260 @@
+<resources>
+    <string name="app_name">NNBS</string>
+    <string name="BTextPrisijungti">Prisijungti</string>
+    <string name="TextVSlaptazodis">Slaptažodis</string>
+    <string name="nick">Email</string>
+    <string name="BTextRegistruotis">Registruotis</string>
+    <string name="RegistracijaInfo">Įveskite savo duomenis</string>
+    <string name="vardas">Vardas</string>
+    <string name="tipas">Nuomininkas</string>
+    <string name="tipas2">Nuomotojas</string>
+    <string name="visSkelb">Visi mano skelbimai</string>
+    <string name="patPerz">Patalpos kurias nori peržiūrėti</string>
+    <string name="graf">Grafikas</string>
+    <string name="noSkelb">Skelbimų nėra</string>
+    <string name="idetSkelb">Įdėti Skelbimą</string>
+    <string name="textPavad">Pavadinimas</string>
+    <string name="textKaina">Kaina</string>
+    <string name="textVieta">Vieta</string>
+    <string name="butIssaug">Išsaugoti</string>
+    <string name="nuotPas">Pasirinkite nuotrauką</string>
+    <string name="pakSlap">Pakartokite slaptažodį</string>
+    <string name="skelbIesk">Skelbimų paieška</string>
+    <string name="objektPerz">Objektų peržiūra</string>
+    <string name="popSkelb">Populiariausi Skelbimai</string>
+    <string name="naujSkelb">Naujausi Skelbimai</string>
+    <string name="manPask">Mano Paskyra</string>
+    <string name="patTip">Patalpų tipas</string>
+    <string name="saviv">Savivaldybė</string>
+    <string name="gyven">Gyvenvietė</string>
+    <string name="savivaldHint">Pvz. Kaunas, Kauno r.</string>
+    <string name="gyvenHint">Pvz. Andruškonių k.</string>
+    <string name="mikRaj">Mikro rajonas</string>
+    <string name="mikroRajHint">Pvz. Dainava</string>
+    <string name="gatve">Gatvė</string>
+    <string name="gatveHint">Pvz. Taikos pr.</string>
+    <string name="plot">Plotas(m^2)</string>
+    <string name="nuo">Nuo</string>
+    <string name="iki">Iki</string>
+    <string name="kaina">Kaina(eur/mėn)</string>
+    <string name="kambSk">Kambariai</string>
+    <string name="aukstSk">Aukštų Sk.</string>
+    <string name="aukstPas">Aukštas</string>
+    <string name="iesk">Ieškoti</string>
+    <string name="det">Detaliau</string>
+    <string name="metai">Metai</string>
+    <string name="sild">Šildymas</string>
+    <string name="pastTip">Pastato Tipas</string>
+    <string name="ireng">Įrengimas</string>
+    <string name="namo_tipas">Namo Tipas</string>
+    <string name="koment">Komentaras</string>
+    <string name="ivert">Įvertinimas</string>
+    <string name="namo_nr">Namo Nr.</string>
+    <string name="buto_nr">Buto Nr.</string>
+    <string name="rezervuoti">Rezervuoti apžiūrėjimo laiką</string>
+    <string name="savNr">Savaitė</string>
+    <string name="diena">Diena</string>
+    <string name="laikas">Laikas</string>
+    <string name="rezervuoti_laik">Rezervuoti laiką</string>
+    <string name="mano_skelbimai">Mano Skelbimai</string>
+    <string name="i_nuomotos_patalpos">Išnuomotos Patalpos</string>
+    <string name="i_sinuomotos_patalpos">Išsinuomotos Patalpos</string>
+    <string name="per_i_r_jimo_laikai">Rezervavimo Laikai</string>
+    <string name="rezervacijos_laikas">Rezervacijos Laikas</string>
+    <string name="patalp_duomenys">Patalpų Duomenys</string>
+    <string name="savait">Savaitė</string>
+    <string name="atmesti">Atmesti</string>
+    <string name="patvirtinti">Patvirtinti</string>
+    <string name="per_i_r_ti_nuominink">Peržiūrėti Nuomininką</string>
+    <string name="statusas">Statusas</string>
+    <string name="komentaras">Komentaras</string>
+    <string name="supratau">Supratau</string>
+    <string name="vartotojo_info">Vartotojo Info</string>
+    <string name="redaguoti_skelbima">Redaguoti Skelbima</string>
+    <string name="i_saugoti">Išsaugoti</string>
+    <string name="i_trinti">Ištrinti</string>
+    <string name="patalpu_tipas">Patalpu Tipas</string>
+    <string name="at_aukti">Atšaukti</string>
+    <string name="i_nuomoti">Išnuomoti</string>
+    <string name="per_i_r_ti_nuomotoj">Peržiūrėti Nuomotoją</string>
+    <string name="objekto_dokumentai">Dokumentai</string>
+    <string name="objekto_nuotraukos">Nuotraukos</string>
+    <string name="s_skaitos">Sąskaitos</string>
+    <string name="skaitliuk_duomenis">Skaitliukų Duomenys</string>
+    <string name="elektra">Elektra</string>
+    <string name="dujos">Dujos</string>
+    <string name="kar_tas_vanduo">Karštas Vanduo</string>
+    <string name="altas_vanduo">Šaltas Vanduo</string>
+    <string name="m_nesis">Mėnesis</string>
+    <string name="galerija">Galerija</string>
+    <string name="fotografuoti">Fotografuoti</string>
+    <string name="prane_ti_apie_atvykim">Pranešti Apie Atvykimą</string>
+    <string name="kelti">Įkelti</string>
+    <string name="artimiausias_nuomotojo_apsilankymas">Artimiausias nuomotojo apsilankymas</string>
+    <string name="i_saugoti_pakeitimus">Išsaugoti Pakeitimus</string>
+    <string name="keisti_slapta_od">Keisti Slaptažodį</string>
+    <string name="j_s_paskyra">Jūsų Paskyra</string>
+    <string name="tvarkyti_grafik">Tvarkyti Grafiką</string>
+    <string name="keisti">Keisti</string>
+    <string name="naujas_slapta_odis">Naujas Slaptažodis</string>
+    <string name="dabartinis_slapta_odis">Dabartinis Slaptažodis</string>
+    <string name="grafikas">Grafikas</string>
+    <string name="naudoti_ios_dienos_grafik_visom_kitom_dienom">Naudoti šios dienos grafiką visom kitom dienom</string>
+    <string name="naudoti_ios_savait_s_grafik_visom_kitom_savait_m">Naudoti šios savaitės grafiką visom kitom savaitėm</string>
+    <string name="i_saugoti_grafik">Išsaugoti Grafiką</string>
+    <string name="nutraukti_nuoma">Nutraukti Nuoma</string>
+    <string name="istorija">Istorija</string>
+    <string name="palikti_atsiliepim_ir_vertinti_patalpas">Palikti Atsiliepimą ir Įvertinti Patalpas</string>
+    <string name="palikti_atsiliepim_ir_vertinim_apie_vartotoj">Palikti Atsiliepimą ir Įvertinimą apie Vartotoją</string>
+    <string name="j_s_vertinimas">Jūsų Įvertinimas</string>
+    <string name="j_s_atsiliepimas">Jūsų Atsiliepimas</string>
+    <string name="i_trinti_istorijos_ra">Ištrinti istorijos įrašą</string>
+    <string name="vartotojas">Vartotojas</string>
+    <string name="vertinimas">Įvertinimas</string>
+    <string name="elektroninis_pa_tas">Elektroninis Paštas</string>
+    <string name="atsiliepimai_apie_patalpas">Atsiliepimai apie patalpas</string>
+    <string name="per_i_r_ti_atsiliepimus_apie_vartotoj">Peržiūrėti Atsiliepimus Apie Vartotoją</string>
+    <string name="vartotojas_palik_s_atsiliepim">Vartotojas Palikęs Atsiliepimą</string>
+    <string name="n_ra">nėra</string>
+    <string name="kelti_nuotraukas">Įkelti Nuotraukas</string>
+    <string name="pa_alinti">Pašalinti</string>
+    <string name="pagrindin">Pagrindinė</string>
+    <string name="tvarkyti_nuotraukas">Tvarkyti nuotraukas</string>
+    <string name="per_i_r_ti_nuotraukas">Peržiūrėti nuotraukas</string>
+    <string name="telefono_numeris">Telefono numeris</string>
+    <string name="per_i_r_ti">Peržiūrėti</string>
+    <string name="gerai">Gerai</string>
+    <string name="rezervacijos">Rezervacijos</string>
+    <string-array name="patalpuTipai">
+        <item>Butas</item>
+        <item>Namas</item>
+    </string-array>
+    <string-array name="aukstuTipai">
+        <item> </item>
+        <item>Ne Pirmas</item>
+        <item>Ne Paskutinis</item>
+        <item>Ne pirm. Ne pask.</item>
+        <item>Pirmas</item>
+        <item>Paskutinis</item>
+    </string-array>
+    <string-array name="sildymTipai">
+        <item> </item>
+        <item>Centrinis</item>
+        <item>Elektra</item>
+        <item>Skystu kuru</item>
+        <item>Centrinis kolektorinis</item>
+        <item>Geoterminis</item>
+        <item>Dujinis</item>
+        <item>Kietu kuru</item>
+        <item>Kita</item>
+    </string-array>
+    <string-array name="pastatTipai">
+        <item> </item>
+        <item>Mūrinis</item>
+        <item>Blokinis</item>
+        <item>Monolitinis</item>
+        <item>Medinis</item>
+        <item>Karkasinis</item>
+        <item>Rastinis</item>
+        <item>Kita</item>
+    </string-array>
+    <string-array name="irengTipai">
+        <item> </item>
+        <item>Įrengtas</item>
+        <item>Dalinė Apdaila</item>
+        <item>Neįrengtas</item>
+        <item>Nebaigtas Statyti</item>
+        <item>Kita</item>
+    </string-array>
+    <string-array name="namoTipai">
+        <item> </item>
+        <item>Gyvenamasis</item>
+        <item>Namo Dalis</item>
+        <item>Sodo Namas</item>
+        <item>Sublokuotas Namas</item>
+        <item>Sodyba</item>
+    </string-array>
+    <string-array name="menesiai">
+        <item>Sausis</item>
+        <item>Vasaris</item>
+        <item>Kovas</item>
+        <item>Balandis</item>
+        <item>Gegužė</item>
+        <item>Birželis</item>
+        <item>Liepa</item>
+        <item>Rugpjūtis</item>
+        <item>Rugsėjis</item>
+        <item>Spalis</item>
+        <item>Lapkritis</item>
+        <item>Gruodis</item>
+    </string-array>
+    <string-array name="metai">
+        <item>2016</item>
+        <item>2017</item>
+        <item>2018</item>
+        <item>2019</item>
+    </string-array>
+    <string-array name="dienos">
+        <item>Pirmadienis</item>
+        <item>Antradienis</item>
+        <item>Trečiadienis</item>
+        <item>Ketvirtadienis</item>
+        <item>Penktadienis</item>
+        <item>Šeštadienis</item>
+        <item>Sekmadienis</item>
+    </string-array>
+    <string-array name="savaites">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+        <item>7</item>
+        <item>8</item>
+        <item>9</item>
+        <item>10</item>
+        <item>11</item>
+        <item>12</item>
+        <item>13</item>
+        <item>14</item>
+        <item>15</item>
+        <item>16</item>
+        <item>17</item>
+        <item>18</item>
+        <item>19</item>
+        <item>20</item>
+        <item>21</item>
+        <item>22</item>
+        <item>23</item>
+        <item>24</item>
+        <item>25</item>
+        <item>26</item>
+        <item>27</item>
+        <item>28</item>
+        <item>29</item>
+        <item>30</item>
+        <item>31</item>
+        <item>32</item>
+        <item>33</item>
+        <item>34</item>
+        <item>35</item>
+        <item>36</item>
+        <item>37</item>
+        <item>38</item>
+        <item>39</item>
+        <item>40</item>
+        <item>41</item>
+        <item>42</item>
+        <item>43</item>
+        <item>44</item>
+        <item>45</item>
+        <item>46</item>
+        <item>47</item>
+        <item>48</item>
+        <item>49</item>
+        <item>50</item>
+        <item>51</item>
+        <item>52</item>
+    </string-array>
+</resources>
